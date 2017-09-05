@@ -21,5 +21,7 @@ func InitializeRoutes() *gin.Engine {
 	// from the disk again. This makes serving HTML pages very fast.
 	router.LoadHTMLGlob("templates/*")
 
-	// Handle GET requests at /article/view/some_article_id
+	//处理/demo的GET requests 
+	router.GET("/demo",controllers.ShowDemo)
+	// 处理ueditor的各类requests 
 	router.Any("/demo/controller", controllers.Action)
