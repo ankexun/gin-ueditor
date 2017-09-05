@@ -16,6 +16,19 @@ import (
 
 const ueBasePath = `static/upload/`
 
+func ShowDemo(c *gin.Context) {
+	c.HTML (
+	// Set the HTTP status to 200 (OK)
+      	http.StatusOK,
+      	// Use the demo.html template
+      	"demo.html",
+      	// Pass the data that the page uses (in this case, 'title')
+      	gin.H{
+        	"title": "UEditor演示",
+      	},
+	)
+}
+
 func Action(c *gin.Context) {
 	action := c.Query("action")
 	datePath := time.Now().Format("20060102") + `/`
