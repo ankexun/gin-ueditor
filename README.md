@@ -36,7 +36,7 @@
 修改ueditor.config.js,第 33行<br>
 ``, serverUrl: "php/controller.php"`` <br>
 改成<br>
-``, serverUrl: "/demo/controller"`` <br>
-//这个url必须和我们在routes.go里配置的 ``router.Any("/demo/controller", controllers.Action)`` 对应<br>
+``, serverUrl: "/ueditor/controller"`` <br>
+//这个url必须和我们在routes.go里配置的 ``router.Any("/ueditor/controller", controllers.Action)`` 对应<br>
 
 其它的看代码里的注释吧
