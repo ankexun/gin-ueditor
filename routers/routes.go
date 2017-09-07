@@ -24,4 +24,4 @@ func InitializeRoutes() *gin.Engine {
 	//处理/demo的GET requests 
 	router.GET("/demo",controllers.ShowDemo)
 	// 处理ueditor的各类requests 
-	router.Any("/demo/controller", controllers.Action)
+	router.Any("/ueditor/controller", controllers.Action)
